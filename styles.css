@@ -50,7 +50,7 @@ body{
 }
 
 /* ---> info-card <--- */
-.info-card__h3{
+.info-card__p01{
     background-color: var(--Yellow);
     width: 73px;
     height: 26px;
@@ -62,7 +62,7 @@ body{
     margin-bottom: 12px;
 }
 
-.info-card__p01{
+.info-card__p02{
     height: 18px;
     font-size: 0.75em;
     color: var(--Gray-950);
@@ -84,7 +84,7 @@ body{
     transition: 200ms;
 }
 
-.info-card__p02{
+.info-card__p03{
     font-size: 0.875em;
     line-height: 1.5em;
     color: var(--Gray-500);
@@ -156,13 +156,13 @@ body{
     }
 
     /* ---> info-card <--- */
-    .info-card__h3{
+    .info-card__p01{
         width: 82px;
         height: 29px;
         font-size: 0.875em;
     }
 
-    .info-card__p01{
+    .info-card__p02{
         font-size: 0.875em;
     }
 
@@ -170,7 +170,7 @@ body{
         font-size: 1.5em;
     }
 
-    .info-card__p02{
+    .info-card__p03{
         font-size: 1em;
     }
 
