@@ -70,6 +70,12 @@ body{
     font-weight: 500;
 }
 
+.info-card__p02__time{
+    font-size: 1em;
+    color: var(--Gray-950);
+    font-weight: 500;
+}
+
 .info-card__h1{
     height: 30px;
     font-size: 1.25em;
