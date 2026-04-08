@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+    font-size: 16px;
+}
+
+body{
+    background-color: var(--Yellow);
+}
+
+/* -------------------> 375px <------------------- */
+
+
+/* -----------> card <----------- */
+.card{
+    width: 327px;
+    height: 501px;
+    background-color: var(--White);
+    border-radius: 20px;
+    border: 1px solid var(--Gray-950);
+    box-shadow: 8px 8px black;
+    padding: 24px;
+    margin: 156px auto;
+}
+
+/* ---> card-image <--- */
+.card__image-container{
+    border-radius: 10px;
+    margin-bottom: 24px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card__image{
+    position: absolute;
+    left: -30px;
+}
+
+/* ---> info-card <--- */
+.info-card__h3{
+    background-color: var(--Yellow);
+    width: 73px;
+    height: 26px;
+    padding: 6px 12px 0;
+    border-radius: 4px;
+    color: var(--Gray-950);
+    font-size: 0.75em;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.info-card__p01{
+    height: 18px;
+    font-size: 0.75em;
+    color: var(--Gray-950);
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.info-card__h1{
+    height: 30px;
+    font-size: 1.25em;
+    color: var(--Gray-950);
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.info-card__h1:hover{
+    color: var(--Yellow);
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.info-card__p02{
+    font-size: 0.875em;
+    line-height: 1.5em;
+    color: var(--Gray-500);
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+/* ---> info-user <--- */
+.card__info-user{
+    display: flex;
+    align-items: center;
+
+}
+
+.info-user__avatar{
+    height: 32px;
+    margin-right: 12px;
+}
+
+.info-user__avatar:hover{
+    cursor: pointer;
+}
+
+.info-user__name{
+    font-size: 0.85em;
+    font-weight: 800;
+    color: var(--Gray-950);
+}
+
+.info-user__name:hover{
+    color: var(--Gray-500);
+    cursor: pointer;
+    transition: 200ms;
+}
+/* -----------> card <----------- */
+
+
+/* -----------> footer <----------- */
+.footer{
+    text-align: center;
+}
+
+.footer__p{
+    font-size: 0.75em;
+    color: var(--Gray-950);
+}
+.footer__a{
+    color: #7D4EF4;
+    font-size: 1.1em;
+}
+
+.footer__a:hover{
+    color: #4E72F4;
+    transition: 200ms;
+}
+/* -----------> footer <----------- */
+
+
+/* -------------------> >768px <------------------- */
+@media screen and (min-width:768px) {
+    .card{
+        width: 384px;
+        height: 522px;
+    }
+
+    /* ---> card-image <--- */
+    .card__image{
+        left: 0;
+    }
+
+    /* ---> info-card <--- */
+    .info-card__h3{
+        width: 82px;
+        height: 29px;
+        font-size: 0.875em;
+    }
+
+    .info-card__p01{
+        font-size: 0.875em;
+    }
+
+    .info-card__h1{
+        font-size: 1.5em;
+    }
+
+    .info-card__p02{
+        font-size: 1em;
+    }
+
+    /* ---> info-user <--- */
+    .info-user__name{
+        font-size: 0.875em;
+    }
+}
